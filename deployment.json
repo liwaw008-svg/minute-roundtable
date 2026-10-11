@@ -1,9 +1,9 @@
 {
   "network": "StudioNet",
-  "contractAddress": "0x36f1e067959E11dd15ae761910188A90478d8d08",
-  "deploymentTransaction": "0x2b28be3fa905b23ad46caa888e89552c5d3cc7c58b8b23997c0121d02b5eb746",
-  "sourceSha256": "e84ec0906e9938a10fc6ceb4346c6141879030625e03cc7c1bb90985a10b129c",
-  "sourceCommit": "4182f6eb39582b3193d04a4e2e5d4c417130b60d",
+  "contractAddress": "0xe77A119C21188febd589244133Edd45Fdf39B7D5",
+  "deploymentTransaction": "0xea4619bcfd9ab113d9bc243c112c28e6eb319fe8758c3d9f96ef41be4fa1087b",
+  "sourceSha256": "743008fe78fd612c5c837277eb0099f55ecd3ca41569c9b5f47e1aa3eef31db8",
+  "sourceCommit": "5a59a2986c9981d02b2346972386bb07a710ee27",
   "repository": "https://github.com/liwaw008-svg/minute-roundtable",
   "publicSite": "https://minute-roundtable.pages.dev/"
 }

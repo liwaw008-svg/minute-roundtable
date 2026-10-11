@@ -8,5 +8,10 @@
     "https://raw.githubusercontent.com/liwaw008-svg/minute-roundtable/main/fixtures/minutes-west.txt"
   ],
   "agenda_items": ["A1", "A2", "A3"],
+  "decision_options": {
+    "A1": ["OPEN_14_NOVEMBER", "OPEN_OTHER_DATE"],
+    "A2": ["INCLUDE_SATURDAY", "EXCLUDE_SATURDAY"],
+    "A3": ["OWNER_MIRA", "OWNER_OTHER"]
+  },
   "quorum": 2
 }
