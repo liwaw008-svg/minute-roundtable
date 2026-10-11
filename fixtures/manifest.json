@@ -1,0 +1,12 @@
+{
+  "docket_id": "CIVIC-TABLE-07",
+  "title": "Civic access pilot decision record",
+  "agenda_url": "https://raw.githubusercontent.com/liwaw008-svg/minute-roundtable/main/fixtures/agenda.txt",
+  "minute_urls": [
+    "https://raw.githubusercontent.com/liwaw008-svg/minute-roundtable/main/fixtures/minutes-north.txt",
+    "https://raw.githubusercontent.com/liwaw008-svg/minute-roundtable/main/fixtures/minutes-east.txt",
+    "https://raw.githubusercontent.com/liwaw008-svg/minute-roundtable/main/fixtures/minutes-west.txt"
+  ],
+  "agenda_items": ["A1", "A2", "A3"],
+  "quorum": 2
+}

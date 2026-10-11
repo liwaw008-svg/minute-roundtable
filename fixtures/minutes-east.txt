@@ -1,0 +1,3 @@
+A1 decision: opening date is 14 November.
+A2 decision: include Saturday service, 10:00–14:00.
+A3 decision: accessibility review assigned to Mira.
