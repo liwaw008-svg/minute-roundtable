@@ -1,16 +1,15 @@
 # Minute Roundtable
 
-Minute Roundtable is a GenLayer quorum-intersection primitive for independently published meeting minutes. A docket fixes the agenda, three to six minutes sources, ordered agenda IDs, and an explicit quorum. Validators refetch every source and produce a complete decision vector with exact support and dissent indexes.
+Minute Roundtable turns several human-written accounts of one meeting into a bounded, attributable decision record. A chair enters the agenda and three to five minute books directly; no hosted fixture or GitHub URL is required.
 
-## Why consensus is necessary
+## Real workflow
 
-Different note-takers describe the same decision in different language. Semantic comparison finds the intersection; deterministic guards ensure no agenda item disappears, every source index is valid, and `AGREED` is impossible without the frozen quorum.
+1. `convene(meeting_id, title, agenda_json, minutes_json, quorum)` creates an immutable `SEATED` meeting and rejects reused IDs or identical records.
+2. `reconcile(meeting_id)` asks GenLayer validators to compare the books semantically.
+3. Deterministic checks require every agenda item exactly once, declared decision codes only, valid source indexes, and quorum before `AGREED`.
+4. The terminal `MINUTED` record exposes agreed, disputed, and omitted items with exact source attribution.
 
-## Lifecycle
-
-1. `convene(manifest_url)` freezes the docket, agenda, all minutes, and ordered content digests as `SEATED`.
-2. `reconcile(docket_id)` refetches every frozen byte and classifies each agenda item as `AGREED`, `DISPUTED`, or `OMITTED`.
-3. The terminal `MINUTED` record exposes canonical decisions, disputed IDs, omitted IDs, and exact source attribution.
+The frontend guides a normal person through naming the meeting, setting two agenda questions, writing three minute books, creating the on-chain meeting, and running consensus.
 
 ## Verify
 
@@ -23,5 +22,5 @@ genvm-lint contracts/contract.py
 
 - Site: https://minute-roundtable.pages.dev/
 - Repository: https://github.com/liwaw008-svg/minute-roundtable
-- Contract: https://explorer-studio.genlayer.com/address/0x7D34bff33c49a9338a69d9234459FBd7524bc0dD
 - Network: StudioNet
+
