@@ -1,16 +1,46 @@
 {
-  "docketId": "CIVIC-TABLE-07",
-  "contract": "0x7D34bff33c49a9338a69d9234459FBd7524bc0dD",
+  "meetingId": "LIVE-TABLE-1791733861",
+  "contract": "0x9761dEdc56Ca8bd18Cc091ED282E4BE231F3ec2D",
   "transactions": {
-    "convene": "0x28b587ef480b58045f09e629dc798a14004a65d0a3874684ddc7ce020ae17418",
-    "reconcile": "0xacca58fbc7c4d3e6f14c56a93e2ae9e2ad1edcd2862ba549150ea6b4178cc9d8"
+    "convene": "0x606526aac0359eeec818fa722f51d5845a1a6ebc0b7c2970f5aa3e3280b6d468",
+    "reconcile": "0x67c3fc873b45138df5f073a68d64fe9c99e036cc55e04ac44c72dcc94d97a454"
   },
   "final": {
+    "agenda": [
+      {
+        "id": "A1",
+        "options": [
+          {
+            "code": "MORNING",
+            "label": "Morning release"
+          },
+          {
+            "code": "EVENING",
+            "label": "Evening release"
+          }
+        ],
+        "prompt": "Which release window did the table approve?"
+      },
+      {
+        "id": "A2",
+        "options": [
+          {
+            "code": "SEVEN_DAYS",
+            "label": "Seven days"
+          },
+          {
+            "code": "THREE_DAYS",
+            "label": "Three days"
+          }
+        ],
+        "prompt": "Should public review remain open for a full week?"
+      }
+    ],
     "chair": "0x05C0cc3F433F6e296f18117f558FdB9043434793",
     "decisions": [
       {
         "agenda_id": "A1",
-        "decision_code": "OPEN_14_NOVEMBER",
+        "decision_code": "MORNING",
         "dissent_indexes": [],
         "status": "AGREED",
         "support_indexes": [
@@ -21,18 +51,7 @@
       },
       {
         "agenda_id": "A2",
-        "decision_code": "INCLUDE_SATURDAY",
-        "dissent_indexes": [],
-        "status": "AGREED",
-        "support_indexes": [
-          0,
-          1,
-          2
-        ]
-      },
-      {
-        "agenda_id": "A3",
-        "decision_code": "OWNER_MIRA",
+        "decision_code": "SEVEN_DAYS",
         "dissent_indexes": [],
         "status": "AGREED",
         "support_indexes": [
@@ -43,48 +62,26 @@
       }
     ],
     "disputed": [],
-    "id": "CIVIC-TABLE-07",
-    "manifest": {
-      "agenda_items": [
-        "A1",
-        "A2",
-        "A3"
-      ],
-      "agenda_url": "https://raw.githubusercontent.com/liwaw008-svg/minute-roundtable/main/fixtures/agenda.txt",
-      "decision_options": {
-        "A1": [
-          "OPEN_14_NOVEMBER",
-          "OPEN_OTHER_DATE"
-        ],
-        "A2": [
-          "INCLUDE_SATURDAY",
-          "EXCLUDE_SATURDAY"
-        ],
-        "A3": [
-          "OWNER_MIRA",
-          "OWNER_OTHER"
-        ]
+    "id": "LIVE-TABLE-1791733861",
+    "input_digest": "ce57c5b277a98a0b1cb8f64daaa8adf370d7d13001af67de39db123539620ead",
+    "minutes": [
+      {
+        "label": "North seat",
+        "text": "The table selected the morning release window. Members also approved keeping the public review open for seven full days."
       },
-      "docket_id": "CIVIC-TABLE-07",
-      "minute_urls": [
-        "https://raw.githubusercontent.com/liwaw008-svg/minute-roundtable/main/fixtures/minutes-north.txt",
-        "https://raw.githubusercontent.com/liwaw008-svg/minute-roundtable/main/fixtures/minutes-east.txt",
-        "https://raw.githubusercontent.com/liwaw008-svg/minute-roundtable/main/fixtures/minutes-west.txt"
-      ],
-      "quorum": 2,
-      "title": "Civic access pilot decision record"
-    },
-    "manifest_digest": "8ac154f940ada16f1996abf718984def5b71f542ed0142083a55c0d91d4bc045",
-    "manifest_url": "https://raw.githubusercontent.com/liwaw008-svg/minute-roundtable/main/fixtures/manifest.json",
-    "omitted": [],
-    "record_digests": [
-      "20a724047bbd54b3ca01efe4fe4e9e17032dd1bc43e1bee8a7cf064b084ea48e",
-      "178027cc824656b098d842bfa99fe04bb478d39f2a57051ca27abfdcafb24a55",
-      "c84dbfcfd2e84cac7a53a934c08a2605c69cf58ce49da10ff0980e8631896f60",
-      "d935418149eab14e379d49b4b486b511175590932898afd9ee46cc68c50e5e8b"
+      {
+        "label": "West seat",
+        "text": "Consensus formed around a morning release. The recorded review period was seven days before final publication."
+      },
+      {
+        "label": "East seat",
+        "text": "The chair confirmed MORNING as the release window and SEVEN_DAYS as the public review duration."
+      }
     ],
+    "omitted": [],
+    "quorum": 2,
     "state": "MINUTED",
-    "title": "Civic access pilot decision record"
+    "title": "Public release coordination"
   },
-  "fixtureDisclosure": "The public agenda and minutes are repository-owner demonstration records, not independent publishers."
+  "disclosure": "The three note books are repository-owner demonstration records supplied directly to the contract."
 }

@@ -21,7 +21,7 @@
 <footer class="foot"><span>USER-SUPPLIED MINUTES · BOUNDED OUTPUT · SOURCE ATTRIBUTION</span><a id="explorer" href="#">VIEW CONTRACT ↗</a></footer>
 <script type="module">
 import{createAccount,createClient}from'https://esm.sh/genlayer-js@1.1.8';import{studionet}from'https://esm.sh/genlayer-js@1.1.8/chains';
-const ADDRESS='__CONTRACT_ADDRESS__',ENDPOINT='https://studio.genlayer.com/api';
+const ADDRESS='0x9761dEdc56Ca8bd18Cc091ED282E4BE231F3ec2D',ENDPOINT='https://studio.genlayer.com/api';
 const reader=createClient({chain:studionet,endpoint:ENDPOINT,account:createAccount()});let wallet=null,step=0;
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 $('#meetingId').value='TABLE-'+Date.now().toString().slice(-9);$('#explorer').href='https://explorer-studio.genlayer.com/address/'+ADDRESS;

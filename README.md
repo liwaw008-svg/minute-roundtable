@@ -22,5 +22,6 @@ genvm-lint contracts/contract.py
 
 - Site: https://minute-roundtable.pages.dev/
 - Repository: https://github.com/liwaw008-svg/minute-roundtable
+- Contract: https://explorer-studio.genlayer.com/address/0x9761dEdc56Ca8bd18Cc091ED282E4BE231F3ec2D
 - Network: StudioNet
 
