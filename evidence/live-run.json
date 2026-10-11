@@ -1,0 +1,90 @@
+{
+  "docketId": "CIVIC-TABLE-07",
+  "contract": "0x7D34bff33c49a9338a69d9234459FBd7524bc0dD",
+  "transactions": {
+    "convene": "0x28b587ef480b58045f09e629dc798a14004a65d0a3874684ddc7ce020ae17418",
+    "reconcile": "0xacca58fbc7c4d3e6f14c56a93e2ae9e2ad1edcd2862ba549150ea6b4178cc9d8"
+  },
+  "final": {
+    "chair": "0x05C0cc3F433F6e296f18117f558FdB9043434793",
+    "decisions": [
+      {
+        "agenda_id": "A1",
+        "decision_code": "OPEN_14_NOVEMBER",
+        "dissent_indexes": [],
+        "status": "AGREED",
+        "support_indexes": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "agenda_id": "A2",
+        "decision_code": "INCLUDE_SATURDAY",
+        "dissent_indexes": [],
+        "status": "AGREED",
+        "support_indexes": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "agenda_id": "A3",
+        "decision_code": "OWNER_MIRA",
+        "dissent_indexes": [],
+        "status": "AGREED",
+        "support_indexes": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "disputed": [],
+    "id": "CIVIC-TABLE-07",
+    "manifest": {
+      "agenda_items": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "agenda_url": "https://raw.githubusercontent.com/liwaw008-svg/minute-roundtable/main/fixtures/agenda.txt",
+      "decision_options": {
+        "A1": [
+          "OPEN_14_NOVEMBER",
+          "OPEN_OTHER_DATE"
+        ],
+        "A2": [
+          "INCLUDE_SATURDAY",
+          "EXCLUDE_SATURDAY"
+        ],
+        "A3": [
+          "OWNER_MIRA",
+          "OWNER_OTHER"
+        ]
+      },
+      "docket_id": "CIVIC-TABLE-07",
+      "minute_urls": [
+        "https://raw.githubusercontent.com/liwaw008-svg/minute-roundtable/main/fixtures/minutes-north.txt",
+        "https://raw.githubusercontent.com/liwaw008-svg/minute-roundtable/main/fixtures/minutes-east.txt",
+        "https://raw.githubusercontent.com/liwaw008-svg/minute-roundtable/main/fixtures/minutes-west.txt"
+      ],
+      "quorum": 2,
+      "title": "Civic access pilot decision record"
+    },
+    "manifest_digest": "8ac154f940ada16f1996abf718984def5b71f542ed0142083a55c0d91d4bc045",
+    "manifest_url": "https://raw.githubusercontent.com/liwaw008-svg/minute-roundtable/main/fixtures/manifest.json",
+    "omitted": [],
+    "record_digests": [
+      "20a724047bbd54b3ca01efe4fe4e9e17032dd1bc43e1bee8a7cf064b084ea48e",
+      "178027cc824656b098d842bfa99fe04bb478d39f2a57051ca27abfdcafb24a55",
+      "c84dbfcfd2e84cac7a53a934c08a2605c69cf58ce49da10ff0980e8631896f60",
+      "d935418149eab14e379d49b4b486b511175590932898afd9ee46cc68c50e5e8b"
+    ],
+    "state": "MINUTED",
+    "title": "Civic access pilot decision record"
+  },
+  "fixtureDisclosure": "The public agenda and minutes are repository-owner demonstration records, not independent publishers."
+}
