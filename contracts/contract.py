@@ -10,7 +10,7 @@ def tidy(value, limit=1600):
 
 def code(value):
     key = tidy(value, 64).upper()
-    if not re.fullmatch(r"[A-Z0-9][A-Z0-9_-]{2,63}", key):
+    if not re.fullmatch(r"[A-Z0-9][A-Z0-9_-]{1,63}", key):
         raise gl.vm.UserError("[EXPECTED] valid docket id required")
     return key
 
